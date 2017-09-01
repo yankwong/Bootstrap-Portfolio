@@ -259,10 +259,19 @@ textarea {
 	height: 40px;
 	font-size: 15px;
 	cursor: pointer;
+	animation-duration: 2s;
 }
 .submit-btn:hover {
-	background-color: #377F7C;
+	/*background-color: #377F7C;*/
+	animation-name: example;
+    
 }
+
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: #377F7C;}
+}
+
 
 .contact-me-modal, .portfolio-modal {
 	display: none;
