@@ -296,25 +296,10 @@ textarea {
 /* Portfolio Page */
 .port-block {
 	position: relative;
-	width: 100%;
-	height: 300px;
-	margin: 25px 0 20px 0;
+	margin: 0;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-.port-block.odd {
-	float: none;
-}
-
-.port-block.even {
-	float: none;
-}
-
-.port-block.even::after {
-	content: "";
-	display: block;
-	clear: both;
+	padding: 10px;
 }
 
 .port-block span.label {
@@ -328,22 +313,18 @@ textarea {
 	background-color: rgb(74, 170, 165);
 	background-color: rgba(74, 170, 165, 0.7);
 }
+.label-wrapper {
+	position: relative;
+}
+/*@media (min-width: 768px) {
+	.port-block span.label {
+		bottom: 45px;	
+	}
+}*/
 .port-block span.label:hover{
 	background-color: rgba(74, 170, 165, 1);	
 }
 
-.port-block.block-1 {
-	background-image: url('../images/cat-01.jpg');
-}
-.port-block.block-2 {
-	background-image: url('../images/cat-02.jpg');
-}
-.port-block.block-3 {
-	background-image: url('../images/cat-03.jpg');
-}
-.port-block.block-4 {
-	background-image: url('../images/cat-04.jpg');
-}
-.port-block.block-5 {
-	background-image: url('../images/cat-05.jpg');
+.port-block img {
+	width: 100%;
 }
